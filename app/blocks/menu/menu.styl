@@ -1,0 +1,59 @@
+.menu
+	display block
+	&__container
+		padding-top 30px
+		display flex
+		flex-wrap wrap
+	&__item
+		position relative
+		margin-right 25px
+		padding-bottom 35px
+		&:last-child
+			margin-right 0
+		&::before
+			position absolute
+			display none
+			content ""
+			bottom 2px
+			left 50%
+			width 25px
+			height 15px
+			background-color #fff
+			background-image: url('../images/menu.png')
+			background-repeat no-repeat
+			background-position: top center;
+			transform: translateX(-50%);
+			z-index 10
+		&:hover::before
+			display block
+		&:hover .menu__sub-container
+			display flex
+	&__link
+		color fontGrey
+		font-size 13px
+		text-transform uppercase
+		text-decoration none
+		cursor pointer
+		&:hover
+			color fontBlack
+		&--active
+			color fontBlack
+	&__sub-container
+		position absolute
+		display none
+		flex-wrap wrap
+		padding-top 20px
+		bottom -25px
+		left 0
+		width 600px
+		background-color #fff;
+	&__sub-item
+		margin-right 20px
+	&__sub-link
+		color fontGrey
+		font-size 13px
+		text-transform uppercase
+		text-decoration none
+		&:hover
+			color fontBlack
+

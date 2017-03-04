@@ -1,0 +1,8 @@
+include ../icon/icon
+
+mixin socials(data)
+	+b.socials&attributes(attributes)
+		each social in data
+			+e('a').item(href=social.href)
+				- iconClass = "__icon socials__icon--" + social.icon
+				+icon(social.icon)(class=iconClass)

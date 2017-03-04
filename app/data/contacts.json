@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Санкт-Петербург, ул.Пионерская, д.1",
+    "icon": "address"
+  },
+  {
+    "title": "8 812 517 0669",
+    "icon": "phone",
+    "href": "tel:+78125170669"
+  },
+  {
+    "title": "info@drevogroup.com",
+    "icon": "mail",
+    "href": "mailto:info@drevogroup.com"
+  }
+]

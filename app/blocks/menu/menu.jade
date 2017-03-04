@@ -1,0 +1,12 @@
+mixin menu(data)
+	+b.menu&attributes(attributes)
+		+e('ul').container
+			each menuItem in data
+				+e('li').item
+					- menuLinkClass = menuItem.active ? "__link menu__link--active" : "__link"
+					+e('a')(href=menuItem.href class=menuLinkClass)= menuItem.label
+					if menuItem.submenu
+						+e('ul').sub-container
+							each subMenuItem in menuItem.submenu
+								+e('li').sub-item
+									+e('a').sub-link(href=subMenuItem.href)= subMenuItem.label

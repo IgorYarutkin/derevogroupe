@@ -1,6 +1,13 @@
 extends /blocks/layout-default/layout-default
+include /blocks/header/header
+include /blocks/content/content
+include /blocks/footer/footer
 
 block head
-	- var pageTitle = 'CSSSR Project Template';
+	- var pageTitle = 'Derevo Groupe';
 
 block content
+	+header()
+	+content(getData('content'))
+	+footer(getData('footer'))(class="container")
+

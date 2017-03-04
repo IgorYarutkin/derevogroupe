@@ -1,0 +1,9 @@
+include ../icon/icon
+
+mixin contacts(data)
+	+b.contacts&attributes(attributes)
+		each contact in data
+			- iconClass = "__icon contacts__icon--" + contact.icon
+			+e('a').link(href=contact.href)
+				+icon(contact.icon)(class=iconClass)
+				| !{contact.title}

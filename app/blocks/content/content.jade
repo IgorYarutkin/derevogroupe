@@ -1,0 +1,5 @@
+mixin content(data)
+	+b('main').content&attributes(attributes)
+		+e.container.container
+			+e('h1').title= data.title
+			+e('a').button(href="#") Посмотреть каталог

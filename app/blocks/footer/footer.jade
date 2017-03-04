@@ -1,0 +1,8 @@
+include ../contacts/contacts
+include ../socials/socials
+
+mixin footer(data)
+	+b.footer&attributes(attributes)
+		+e.copyright= data.copyright
+		+contacts(getData('contacts'))
+		+socials(getData('socials'))

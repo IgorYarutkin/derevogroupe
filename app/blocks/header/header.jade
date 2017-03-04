@@ -1,0 +1,12 @@
+include ../menu/menu
+include ../icon/icon
+
+mixin header()
+	+b.header&attributes(attributes)
+		+e.container.container
+			+e.logo
+				+e('img').logo-image(src="/assets/images/logo.png" width="187" height="53")
+			+menu(getData('menu'))
+			+e('form').search-form(action='' method='post')
+				+e('input').search-input(type="text" placeholder="Поиск" name="search")
+				+icon('search').search-icon
