@@ -5,7 +5,7 @@
     "submenu": [
       {
         "label": "Частные объекты",
-        "href": "#"
+        "href": "furniture-page.html"
       },
       {
         "label": "Общественные заведения (Horeca)",

@@ -1,0 +1,5 @@
+mixin breadcrumbs(data)
+	+b('ul').breadcrumbs&attributes(attributes)
+		each crumb in data
+			+e('li').item
+				+e('a').link(href=crumb.href)= crumb.item

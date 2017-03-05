@@ -1,0 +1,10 @@
+mixin gallery(data)
+	+b.gallery&attributes(attributes)
+		each image in data
+			+e.item
+				+e.image(src=image.file width=image.width height=image.height)
+				if image.popup
+					+e.popup
+						+e.popup-title= image.popup.title
+						+e.popup-text= image.popup.text
+		+e.button Посмотреть далее

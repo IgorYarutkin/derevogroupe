@@ -1,0 +1,12 @@
+include ../breadcrumbs/breadcrumbs
+include ../gallery/gallery
+
+mixin furniture(data)
+	+b.furniture&attributes(attributes)
+		+e.container.container
+			+e.description
+				+e('h1').title= data.title
+				+breadcrumbs(data.breadcrumbs)
+				each paragraph in data.text
+					+e('p').text= paragraph
+			+gallery(data.gallery)
