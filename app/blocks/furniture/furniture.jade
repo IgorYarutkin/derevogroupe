@@ -25,4 +25,8 @@ mixin furniture(data)
 					+request(data.request)
 					+e.print
 						+icon('print').print-icon
+				if data.modalImage
+					+e.modal-window
+						+e.modal-image
+							+e.modal-close
 			+gallery(data.gallery)(class=data.galleryClass)

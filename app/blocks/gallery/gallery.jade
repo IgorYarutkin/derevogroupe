@@ -8,5 +8,5 @@ mixin gallery(data)
 						if image.popup
 							+e.popup
 								+e.popup-title= image.popup.title
-								+e.popup-text= image.popup.text
+								+e.popup-text !{image.popup.text}
 		+e.button Посмотреть далее
