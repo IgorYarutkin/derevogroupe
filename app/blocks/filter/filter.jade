@@ -1,0 +1,12 @@
+include ../modal/modal
+
+mixin filter(data)
+	+b.filter&attributes(attributes)
+		+e.title= data.title
+		+e('form').container
+			each item in data.filters
+				+e.item
+					+e('img').image(src=item.bgImage width="255" height="95")
+					+e.item-label= item.label
+					if item.modal
+						+modal(item.modal)

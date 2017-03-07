@@ -1,0 +1,6 @@
+mixin request(data)
+	+b.request&attributes(attributes)
+		+e('a').button=	data.label
+		+e.modal
+			+e('form').modal-window(action="#" method="post")
+

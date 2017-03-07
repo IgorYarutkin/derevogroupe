@@ -1,0 +1,14 @@
+mixin modal(data)
+	- modalClass = "modal--" + data.image[0].name
+	+b.modal&attributes(attributes)(class=modalClass)
+		+e('button').close(type="button")
+		+e('h3').title= data.title
+		if data.image
+			+e.gallery
+				each image in data.image
+					+e.image-container
+						+e('img').image(src=image.src width=image.width height=image.height)
+						+e('input').input(type=image.type id=image.name name=image.name value=image.value)
+						if image.label
+							+e('label').label(for=image.name)= image.label
+		+e('p').text= data.text

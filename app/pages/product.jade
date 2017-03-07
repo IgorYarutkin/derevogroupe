@@ -1,0 +1,13 @@
+extends /blocks/layout-default/layout-default
+include /blocks/header/header
+include /blocks/footer/footer
+include /blocks/furniture/furniture
+
+block head
+    - var pageTitle = 'Дуб СЕЛЕКТ - Derevo Groupe';
+
+block content
+    +header()
+    +furniture(getData('product'))
+    +footer(getData('footer'))(class="container")
+

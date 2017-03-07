@@ -1,12 +1,25 @@
 include ../breadcrumbs/breadcrumbs
 include ../gallery/gallery
+include ../filter/filter
+include ../specifications/specifications
+include ../request/request
+include ../icon/icon
 
 mixin furniture(data)
 	+b.furniture&attributes(attributes)
 		+e.container.container
 			+e.description
 				+e('h1').title= data.title
-				+breadcrumbs(data.breadcrumbs)
+				if data.breadcrumbs
+					+breadcrumbs(data.breadcrumbs)
 				each paragraph in data.text
 					+e('p').text= paragraph
-			+gallery(data.gallery)
+				if data.filter
+					+filter(data.filter)
+				if data.specifications
+					+specifications(data.specifications)
+				if data.request
+					+request(data.request)
+					+e.print
+						+icon('print').print-icon
+			+gallery(data.gallery)(class=data.galleryClass)

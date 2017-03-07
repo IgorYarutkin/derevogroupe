@@ -1,0 +1,6 @@
+mixin specifications(data)
+	+b.specifications&attributes(attributes)
+		+e('h3').title= data.title
+		+e('ul').list
+			each item in data.items
+				+e('li').item= item

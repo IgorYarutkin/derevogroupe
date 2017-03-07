@@ -1,14 +1,29 @@
 .gallery
 	position relative
 	display flex
-	width 58.3%
+	flex-shrink 0
 	height 700px
-	overflow auto
+	&--furniture
+		width 890px
+	&--flooring
+		width 850px
+	&--product
+		width 845px
 	&__item
-		position relative
+		display flex
+		flex-direction column
+		justify-content space-between
 		margin-right 4px
 		width 345px
 		height 700px
+	&--product &__item
+		flex-direction row
+		justify-content space-between
+		align-content space-between
+		flex-wrap wrap
+		width 100%
+	&__item-inner
+		position relative
 		&:hover .gallery__popup
 			display block
 	&__popup
@@ -20,7 +35,7 @@
 		width 100%
 		color #fff
 		font-size 12px
-		background-color rgba(0, 0, 0, 0.6)
+		background-color rgba(28, 28, 28, 0.65)
 	&__popup-title
 		margin-bottom 30px
 		font-size 18px
@@ -38,6 +53,8 @@
 		background-color rgba(0, 0, 0, 0.5)
 		transform translateY(-50%)
 		cursor pointer
+	&--product &__button
+		display none
 		&:hover
 			opacity 0.6
 		&::after

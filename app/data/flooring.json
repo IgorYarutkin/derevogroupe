@@ -1,0 +1,223 @@
+{
+  "title": "Деревянные полы",
+  "text": [
+    "Вершиной искусства создания паркета, конечно же, является паркет ручной работы от HARO. Тщательно подобранная древесина, искусно обработанные поверхности и любовь к мелочам – вот элементы превосходного качества. Благодаря тщательной обработке натуральным маслом олеовера дерево раскрывает свой настоящий характер. Это не только визуальное наслаждение от каждой половицы, это разница, которую Вы ощутите всеми органами чувств.",
+    "Высокое искусство паркетного ремесла.",
+    "Паркет ручной работы — это премиум-сегмент марки HARO, воплощающий вечные неповторимые ценности: выбирая паркет ручной работы от HARO, Вы выбираете больше, чем просто паркетный пол."
+  ],
+  "filter": {
+    "title": "Подберите пол по параметрам:",
+    "filters": [
+      {
+        "bgImage": "/assets/images/bg_filter_color.jpg",
+        "label": "Цветовая гамма",
+        "modal": {
+          "title": "Цветовая гамма",
+          "text": "Цветовая гамма - это премиум-сегмент марки HARO, воплощающий вечные неповторимые ценности: выбирая паркет ручной работы от HARO, Вы выбираете больше, чем просто паркетный пол.",
+          "image": [
+            {
+              "src": "/assets/images/modal_color.jpg",
+              "width": "495",
+              "height": "95",
+              "name": "color",
+              "value": " ",
+              "type": "text"
+            }
+          ]
+        }
+      },
+      {
+        "bgImage": "/assets/images/bg_filter_select.jpg",
+        "label": "Селекция доски",
+        "modal": {
+          "title": "Селекция доски",
+          "text": "Цветовая гамма - это премиум-сегмент марки HARO, воплощающий вечные неповторимые ценности: выбирая паркет ручной работы от HARO, Вы выбираете больше, чем просто паркетный пол.",
+          "image": [
+            {
+              "src": "/assets/images/modal_nature.png",
+              "width": "99",
+              "height": "99",
+              "name": "select",
+              "value": "nature",
+              "type": "radio",
+              "label": "Nature (с отборными сучками)"
+            },
+            {
+              "src": "/assets/images/modal_rustik.png",
+              "width": "99",
+              "height": "99",
+              "name": "select",
+              "value": "rustik",
+              "type": "radio",
+              "label": "Рустик (с сучками)"
+            },
+            {
+              "src": "/assets/images/modal_select.png",
+              "width": "99",
+              "height": "95",
+              "name": "select",
+              "value": "select",
+              "type": "radio",
+              "label": "Select (без сучков)"
+            }
+          ]
+        }
+      },
+      {
+        "bgImage": "/assets/images/bg_filter_form.jpg",
+        "label": "Форма доски",
+        "modal": {
+          "title": "Форма доски",
+          "text": "Цветовая гамма - это премиум-сегмент марки HARO, воплощающий вечные неповторимые ценности: выбирая паркет ручной работы от HARO, Вы выбираете больше, чем просто паркетный пол.",
+          "image": [
+            {
+              "src": "/assets/images/modal_form_solid.png",
+              "width": "62",
+              "height": "62",
+              "name": "form",
+              "value": "solid",
+              "type": "radio",
+              "label": "Массивная доска"
+            },
+            {
+              "src": "/assets/images/modal_form_french.png",
+              "width": "62",
+              "height": "62",
+              "name": "form",
+              "value": "french",
+              "type": "radio",
+              "label": "Модули French Style"
+            },
+            {
+              "src": "/assets/images/modal_form_versal.png",
+              "width": "62",
+              "height": "62",
+              "name": "form",
+              "value": "versal",
+              "type": "radio",
+              "label": "Версальная ёлка"
+            },
+            {
+              "src": "/assets/images/modal_form_classic.png",
+              "width": "62",
+              "height": "62",
+              "name": "form",
+              "value": "classic",
+              "type": "radio",
+              "label": "Классическая ёлка"
+            },
+            {
+              "src": "/assets/images/modal_form_terrace.png",
+              "width": "62",
+              "height": "62",
+              "name": "form",
+              "value": "terrace",
+              "type": "radio",
+              "label": "Террасная доска"
+            },
+            {
+              "src": "/assets/images/modal_form_creative.png",
+              "width": "62",
+              "height": "62",
+              "name": "form",
+              "value": "creative",
+              "type": "radio",
+              "label": "Креатив"
+            }
+          ]
+        }
+      },
+      {
+        "bgImage": "/assets/images/bg_filter_structure.jpg",
+        "label": "Структура доски",
+        "modal": {
+          "title": "Структура доски",
+          "text": "Структура доски - это премиум-сегмент марки HARO, воплощающий вечные неповторимые ценности: выбирая паркет ручной работы от HARO, Вы выбираете больше, чем просто паркетный пол.",
+          "image": [
+            {
+              "src": "/assets/images/modal_structure_engineer.png",
+              "width": "176",
+              "height": "55",
+              "name": "structure",
+              "value": "engineer",
+              "type": "radio",
+              "label": "Инженерная доска"
+            },
+            {
+              "src": "/assets/images/modal_structure_solid.png",
+              "width": "177",
+              "height": "55",
+              "name": "structure",
+              "value": "solid",
+              "type": "radio",
+              "label": "Массивная доска"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "gallery": [
+    [
+      {
+        "file": "/assets/images/flooring_select.jpg",
+        "width": "280",
+        "height": "400",
+        "popup": {
+          "title": "Дуб Селект",
+          "text": "Натуральный дуб \"Select\", без сучков и заболони, покрытый специальным uv-лаком для создания тонкого пастельного оттенка, способного украсить любой самый изысканный интерьер...."
+        }
+      },
+      {
+        "file": "/assets/images/flooring_rustik.jpg",
+        "width": "280",
+        "height": "295",
+        "popup": {
+          "title": "Дуб Рустик",
+          "text": "Натуральный дуб \"Select\", без сучков и заболони, покрытый специальным uv-лаком для создания тонкого пастельного оттенка, способного украсить любой самый изысканный интерьер...."
+        }
+      }
+    ],
+    [
+      {
+        "file": "/assets/images/flooring_kumaru.jpg",
+        "width": "280",
+        "height": "295",
+        "popup": {
+          "title": "Кумару",
+          "text": "Натуральный дуб \"Select\", без сучков и заболони, покрытый специальным uv-лаком для создания тонкого пастельного оттенка, способного украсить любой самый изысканный интерьер...."
+        }
+      },
+      {
+        "file": "/assets/images/flooring_shale.jpg",
+        "width": "280",
+        "height": "400",
+        "popup": {
+          "title": "Дуб шале (белое масло)",
+          "text": "Натуральный дуб \"Select\", без сучков и заболони, покрытый специальным uv-лаком для создания тонкого пастельного оттенка, способного украсить любой самый изысканный интерьер...."
+        }
+      }
+    ],
+    [
+      {
+        "file": "/assets/images/flooring_kaboverde.jpg",
+        "width": "280",
+        "height": "400",
+        "popup": {
+          "title": "Дуб Кабо-Верде",
+          "text": "Натуральный дуб \"Select\", без сучков и заболони, покрытый специальным uv-лаком для создания тонкого пастельного оттенка, способного украсить любой самый изысканный интерьер...."
+        }
+      },
+      {
+        "file": "/assets/images/flooring_larch.jpg",
+        "width": "280",
+        "height": "295",
+        "popup": {
+          "title": "Лиственница (голубая волна)",
+          "text": "Натуральный дуб \"Select\", без сучков и заболони, покрытый специальным uv-лаком для создания тонкого пастельного оттенка, способного украсить любой самый изысканный интерьер...."
+        }
+      }
+    ]
+  ],
+  "galleryClass": "gallery--flooring"
+}
