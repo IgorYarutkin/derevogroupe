@@ -12,8 +12,11 @@ mixin furniture(data)
 				+e('h1').title= data.title
 				if data.breadcrumbs
 					+breadcrumbs(data.breadcrumbs)
-				each paragraph in data.text
-					+e('p').text= paragraph
+				if data.text
+					each paragraph in data.text
+						if paragraph.title
+							+e('h3').subtitle= paragraph.title
+						+e('p').text= paragraph.paragraph
 				if data.filter
 					+filter(data.filter)
 				if data.specifications
