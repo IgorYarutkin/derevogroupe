@@ -17,14 +17,60 @@
 		left 0
 		width 100%
 		height 100%
+		color fontParagraph
+		font-family fontDisplay
 		background-color rgba(63, 67, 65, 0.8)
 		z-index 1000
 	&__modal-window
 		position fixed
 		top 50%
 		left 50%
+		padding 20px 40px
 		width 350px
 		height 290px
 		background-color #fff
 		transform translate(-50%, -50%)
 		z-index 2000
+	&__modal-title
+		margin-bottom 10px
+		font-size 18px
+		text-align center
+	&__field
+		margin-top 10px
+		width 275px
+		height 40px
+		line-height 40px
+		color fontParagraph
+		font-size 14px
+		text-align center
+		border 1px solid fontParagraph
+	&__submit
+		margin-top 25px
+		width 275px
+		height 40px
+		line-height 40px
+		color #fff
+		font-size 14px
+		text-align center
+		text-transform uppercase
+		background-color fontParagraph
+		border none
+	&__close
+		position absolute
+		top -12px
+		right -12px
+		width 25px
+		height 25px
+		background-color fontParagraph
+		border none
+		&::before, &::after
+			position absolute
+			content ""
+			top 11px
+			left 2px
+			width 20px
+			height 2px
+			background-color #fff
+			transform rotate(55deg)
+		&::after
+			transform rotate(-60deg)
