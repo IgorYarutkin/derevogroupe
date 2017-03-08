@@ -19,7 +19,17 @@
   },
   {
   "label": "Портфолио",
-  "href": "#"
+  "href": "portfolio.html",
+  "submenu": [
+      {
+        "label": "Частные объекты",
+        "href": "furniture-page.html"
+      },
+      {
+        "label": "Общественные заведения (Horeca)",
+        "href": "#"
+      }
+    ]
   },
   {
   "label": "О нас",
