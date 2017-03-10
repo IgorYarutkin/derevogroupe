@@ -1,0 +1,14 @@
+extends /blocks/layout-default/layout-default
+include /blocks/header/header
+include /blocks/furniture/furniture
+include /blocks/footer/footer
+include /blocks/contact/contact
+
+block head
+    - var pageTitle = 'Контакты - Derevo Groupe';
+    - var mapAPI = true;
+
+block content
+    +header()
+    +contact(getData('contact-information'))
+    +footer(getData('footer'))(class="container")

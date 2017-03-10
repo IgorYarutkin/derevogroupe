@@ -1,0 +1,21 @@
+include ../breadcrumbs/breadcrumbs
+include ../map/map
+
+mixin contact(data)
+	+b.contact&attributes(attributes)
+		+e.container.container
+			+e.description
+				+e('h1').title= data.title
+				if data.breadcrumbs
+					+breadcrumbs(data.breadcrumbs)
+				if data.text
+					each paragraph in data.text
+						if paragraph.title
+							+e('h3').subtitle= paragraph.title
+						+e('p').text !{paragraph.paragraph}
+				+e('form').form(action="#" method="post")
+					+e('h3').form-title= data.form.title
+					each input in data.form.fields
+						+e(input.html).field(type=input.type placeholder=input.label name=input.name required=input.required rows=input.rows)
+					+e('button').submit(type="submit")= data.form.submit
+			+map()(class="contact__map" id="YMapsID")

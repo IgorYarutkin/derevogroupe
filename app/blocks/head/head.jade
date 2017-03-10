@@ -24,6 +24,8 @@ head
 
 	block head
 	title= pageTitle || ''
+	if mapAPI
+		<script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
 	meta(name='description' content=pageDescription || '')
 	meta(name='keywords' content=pageKeywords || '')
 

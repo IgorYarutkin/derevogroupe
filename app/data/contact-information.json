@@ -1,0 +1,44 @@
+{
+  "title": "Контактная информация",
+  "text": [
+    {"paragraph": "197198, Санкт-Петербург, Петроградская сторона<br>ул. Пионерская д.1"},
+    {"paragraph": "Тел.: +7 (812) 400-00-55"},
+    {"paragraph": "info@derevogroup.com"}
+  ],
+  "breadcrumbs": [
+    {
+      "item": "Главная",
+      "href": "index.html"
+    },
+    {
+      "item": "Контактная ифнформация"
+    }
+  ],
+  "form": {
+    "title": "Напишите нам",
+    "fields": [
+      {
+        "html": "input",
+        "type": "text",
+        "label": "Ваше имя",
+        "name": "name",
+        "reguired": ""
+      },
+      {
+        "html": "input",
+        "type": "phone",
+        "label": "Контактный телефон",
+        "name": "phone",
+        "reguired": ""
+      },
+      {
+        "html": "textarea",
+        "label": "Ваш вопрос",
+        "name": "question",
+        "reguired": "",
+        "rows": "3"
+      }
+    ],
+    "submit": "Отправить письмо"
+  }
+}
