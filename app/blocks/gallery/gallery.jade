@@ -4,7 +4,10 @@ mixin gallery(data)
 			+e.item
 				each image in container
 					+e.item-inner
-						+e.image(src=image.file width=image.width height=image.height)
+						if image.video
+							+e('iframe').video(src=image.file width=image.width height=image.height frameborder="0" allowfullscreen)
+						else
+							+e('img').image(src=image.file width=image.width height=image.height)
 						if image.popup
 							+e.popup
 								+e.popup-title= image.popup.title

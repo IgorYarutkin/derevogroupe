@@ -46,7 +46,8 @@
     ],
     [
       {
-        "file": "/assets/images/about02.jpg",
+        "video": true,
+        "file": "https://www.youtube.com/embed/_R4jKVjQAdI",
         "width": "564",
         "height": "295"
       },

@@ -7,7 +7,7 @@ include ../icon/icon
 
 mixin furniture(data)
 	+b.furniture&attributes(attributes)
-		+e.container.container
+		+e.container.container.container--main
 			+e.description
 				+e('h1').title= data.title
 				if data.breadcrumbs
