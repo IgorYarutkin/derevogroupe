@@ -1,28 +1,29 @@
 .request
-	display inline-block
 	margin 75px 10px 0 0
+	display inline-block
 	&__button
 		padding 11px 50px
 		width 320px
-		color #fff
-		font-size 24px
 		font-family fontDisplay
+		font-size 24px
 		text-transform uppercase
-		background-color fontParagraph
 		cursor pointer
+		color #fff
+		background-color fontParagraph
 	&__modal
-		display none
 		position fixed
+		z-index 1000
 		top 0
 		left 0
+		display none
 		width 100%
 		height 100%
-		color fontParagraph
 		font-family fontDisplay
-		background-color rgba(63, 67, 65, 0.8)
-		z-index 1000
+		color fontParagraph
+		background-color rgba(63, 67, 65, .8)
 	&__modal-window
 		position fixed
+		z-index 2000
 		top 50%
 		left 50%
 		padding 20px 40px
@@ -30,7 +31,6 @@
 		height 290px
 		background-color #fff
 		transform translate(-50%, -50%)
-		z-index 2000
 	&__modal-title
 		margin-bottom 10px
 		font-size 18px
@@ -39,20 +39,20 @@
 		margin-top 10px
 		width 275px
 		height 40px
-		line-height 40px
-		color fontParagraph
 		font-size 14px
+		line-height 40px
 		text-align center
+		color fontParagraph
 		border 1px solid fontParagraph
 	&__submit
 		margin-top 25px
 		width 275px
 		height 40px
-		line-height 40px
-		color #fff
 		font-size 14px
+		line-height 40px
 		text-align center
 		text-transform uppercase
+		color #fff
 		background-color fontParagraph
 		border none
 	&__close
@@ -65,11 +65,11 @@
 		border none
 		&::before, &::after
 			position absolute
-			content ""
 			top 11px
 			left 2px
 			width 20px
 			height 2px
+			content ''
 			background-color #fff
 			transform rotate(55deg)
 		&::after

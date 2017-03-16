@@ -14,10 +14,10 @@
 	&--profile
 		width 885px
 	&__item
+		margin-right 4px
 		display flex
 		flex-direction column
 		justify-content space-between
-		margin-right 4px
 		height 700px
 	&--product &__item
 		flex-direction row
@@ -30,44 +30,44 @@
 		&:hover .gallery__popup
 			display block
 	&__popup
-		display none
 		position absolute
-		bottom 0
 		left 0
+		bottom 0
 		padding 25px 20px 65px
+		display none
 		width 100%
-		color #fff
 		font-size 12px
-		background-color rgba(28, 28, 28, 0.65)
+		color #fff
+		background-color rgba(28, 28, 28, .65)
 	&__popup-title
 		margin-bottom 30px
 		font-size 18px
 	&__popup-text
 		line-height 1.3
 	&__button
-		position: absolute
-		bottom: 50%
-		right: 0
+		position absolute
+		right 0
+		bottom 50%
 		padding 15px 35px
 		width 270px
-		color #fff
 		text-align center
 		text-decoration none
-		background-color rgba(0, 0, 0, 0.5)
-		transform translateY(-50%)
 		cursor pointer
+		color #fff
+		background-color rgba(0, 0, 0, .5)
+		transform translateY(-50%)
 	&--product &__button,
 	&--about &__button
 		display none
 		&:hover
-			opacity 0.6
+			opacity .6
 		&::after
 			position absolute
-			content ""
 			top 13px
 			right 35px
 			width 10px
 			height 20px
+			content ''
 			background-image url('../images/arrow_right.png')
 			background-repeat no-repeat
 			background-size cover

@@ -1,6 +1,6 @@
 .furniture
-	display block
 	padding-top 115px
+	display block
 	&__container
 		padding 0 0 20px (80/1600*100)%
 		display flex
@@ -10,11 +10,11 @@
 		font-size 26px
 		text-transform uppercase
 	&__description
-		flex-grow 1
 		padding-right (75/1600*100)%
-		color fontParagraph
-		font-family fontDisplay
+		flex-grow 1
 		overflow auto
+		font-family fontDisplay
+		color fontParagraph
 	&__subtitle
 		margin 60px 0 25px
 		font-size 36px
@@ -37,16 +37,17 @@
 		width 55px
 		height 50px
 	&__modal-window
-		display none
 		position fixed
+		z-index 1000
 		top 0
 		left 0
+		display none
 		width 100%
 		height 100%
-		background-color rgba(63, 67, 65, 0.8)
-		z-index 1000
+		background-color rgba(63, 67, 65, .8)
 	&__modal-image
 		position fixed
+		z-index 2000
 		top 50%
 		left 50%
 		padding 20px 40px
@@ -56,7 +57,6 @@
 		background-repeat no-repeat
 		background-size cover
 		transform translate(-50%, -50%)
-		z-index 2000
 	&__modal-close
 		position absolute
 		top -12px
@@ -67,11 +67,11 @@
 		border none
 		&::before, &::after
 			position absolute
-			content ""
 			top 11px
 			left 2px
 			width 20px
 			height 2px
+			content ''
 			background-color fontParagraph
 			transform rotate(55deg)
 		&::after

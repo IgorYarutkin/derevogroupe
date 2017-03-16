@@ -5,10 +5,10 @@ include /blocks/footer/footer
 include /blocks/contact/contact
 
 block head
-    - var pageTitle = 'Контакты - Derevo Groupe';
-    - var mapAPI = true;
+	- var pageTitle = 'Контакты - Derevo Groupe';
+	- var mapAPI = true;
 
 block content
-    +header()
-    +contact(getData('contact-information'))
-    +footer(getData('footer'))(class="container")
+	+header()
+	+contact(getData('contact-information'))
+	+footer(getData('footer'))(class="container")

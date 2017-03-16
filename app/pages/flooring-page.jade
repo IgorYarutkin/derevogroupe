@@ -4,10 +4,9 @@ include /blocks/furniture/furniture
 include /blocks/footer/footer
 
 block head
-    - var pageTitle = 'Деревенные полы - Derevo Groupe';
+	- var pageTitle = 'Деревенные полы - Derevo Groupe';
 
 block content
-    +header()
-    +furniture(getData('flooring'))
-    +footer(getData('footer'))(class="container")
-
+	+header()
+	+furniture(getData('flooring'))
+	+footer(getData('footer'))(class="container")
